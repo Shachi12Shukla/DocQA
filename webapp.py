@@ -16,8 +16,8 @@ from langchain_pinecone import PineconeVectorStore
 from pinecone import Pinecone
 
 # Get API keys from Streamlit secrets
-GROQ_API_KEY = st.secrets.get("GROQ_API_KEY", os.getenv("GROQ_API_KEY"))
-PINECONE_API_KEY = st.secrets.get("PINECONE_API_KEY", os.getenv("PINECONE_API_KEY"))
+GROQ_API_KEY = st.secrets.get("DocQAKey", os.getenv("DocQAKey"))
+PINECONE_API_KEY = st.secrets.get("docqa_pinecone", os.getenv("docqa_pinecone"))
 
 class SimpleChatWithPDF:
     def __init__(self):
