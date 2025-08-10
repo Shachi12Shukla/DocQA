@@ -1,0 +1,16 @@
+uuid
+os
+tempfile
+datetime
+langchain_community-document_loaders
+langchain_text_splitters
+langchain_huggingface
+langchain-prompts
+langchain_groq 
+langchain
+PyPDF2
+streamlit
+pinecone
+langchain_pinecone
+
+
