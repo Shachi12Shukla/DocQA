@@ -79,7 +79,7 @@ class SimpleChatWithPDF:
                 embedding=self.embedding_model
             )
             
-            st.success("✅ Connected to existing Pinecone index: docqa-project2")
+            st.success("✅ Connected to existing Pinecone index")
             
         except Exception as e:
             st.error(f"Error connecting to Pinecone: {str(e)}")
@@ -271,4 +271,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
