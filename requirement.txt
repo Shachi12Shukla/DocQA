@@ -3,7 +3,6 @@ os
 tempfile
 datetime
 streamlit
-langchain
 pinecone
 langchain_community
 langchain_community-document_loaders
