@@ -7,9 +7,10 @@ import uuid
 # LangChain imports
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_huggingface import HuggingFaceEmbeddings
+# from langchain_huggingface import HuggingFaceEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain_groq import ChatGroq
+from langchain_cohere import CohereEmbeddings
 
 # Vector DB imports
 from langchain_pinecone import PineconeVectorStore
@@ -29,9 +30,9 @@ class SimpleChatWithPDF:
     def setup_components(self):
         """Initialize all components"""
         # Setup embedding model
-        self.embedding_model = HuggingFaceEmbeddings(
-            model_name="BAAI/bge-small-en-v1.5",
-            encode_kwargs={"normalize_embeddings": False}
+        self.embedding_model = CohereEmbeddings(
+            model="embed-english-light-v3.0",  # Free tier model
+            cohere_api_key=st.secrets["COHERE_API_KEY"]
         )
         
         # Setup LLM

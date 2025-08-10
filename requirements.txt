@@ -6,5 +6,6 @@ langchain-huggingface
 langchain-groq
 langchain-pinecone
 sentence-transformers
+langchain-cohere
 
 
