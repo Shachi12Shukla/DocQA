@@ -2,6 +2,8 @@
 
 A Retrieval-Augmented Generation (RAG) application built with Streamlit that allows users to upload PDF documents and ask questions about their content using natural language. The application provides transparent AI responses by showing users the source documents and relevant sections used to generate each answer.
 
+App is deployed and hosted at : https://ask-pdf-ai.streamlit.app/
+
 ## 🚀 Features
 
 - **PDF Upload**: Upload and process PDF documents in real-time
